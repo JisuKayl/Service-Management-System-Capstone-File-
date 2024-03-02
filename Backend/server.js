@@ -34,22 +34,67 @@ app.use(cors());
 // Signup Endpoint
 app.post("/signup", (req, res) => {
   const { fullName, email, password, role } = req.body;
-  bcrypt.hash(password, 10, (err, hash) => {
+
+  // Check if email already exists
+  db.query("SELECT * FROM users WHERE email = ?", [email], (err, results) => {
     if (err) {
       return res.status(500).json({ error: "Internal server error" });
     }
+    if (results.length > 0) {
+      return res.status(400).json({ error: "Email already exists" });
+    }
 
-    db.query(
-      "INSERT INTO users (fullname, email, password, role) VALUES (?, ?, ?, ?)",
-      [fullName, email, hash, role],
-      // eslint-disable-next-line no-unused-vars
-      (err, results) => {
-        if (err) {
-          return res.status(500).json({ error: "Internal server error" });
-        }
-        return res.status(201).json({ message: "User created successfully" });
+    // Validate full name
+    if (!/^[a-zA-Z-]+$/.test(fullName)) {
+      return res.status(400).json({ error: "Invalid full name format" });
+    }
+
+    // Password requirements
+    const passwordErrors = [];
+    if (password.length < 8) {
+      passwordErrors.push("Password must be at least 8 characters long.");
+    }
+    if (!/[A-Z]/.test(password)) {
+      passwordErrors.push(
+        "Password must contain at least one uppercase letter."
+      );
+    }
+    if (!/[a-z]/.test(password)) {
+      passwordErrors.push(
+        "Password must contain at least one lowercase letter."
+      );
+    }
+    if (!/\d/.test(password)) {
+      passwordErrors.push("Password must contain at least one digit.");
+    }
+    if (!/[^a-zA-Z0-9]/.test(password)) {
+      passwordErrors.push(
+        "Password must contain at least one special character."
+      );
+    }
+
+    if (passwordErrors.length > 0) {
+      return res.status(400).json({ error: passwordErrors.join("\n") });
+    }
+
+    // If email doesn't exist and password meets requirements, hash the password and insert the user
+    bcrypt.hash(password, 10, (err, hash) => {
+      if (err) {
+        return res.status(500).json({ error: "Internal server error" });
       }
-    );
+
+      db.query(
+        "INSERT INTO users (fullname, email, password, role) VALUES (?, ?, ?, ?)",
+        [fullName, email, hash, role],
+        // eslint-disable-next-line no-unused-vars
+        (err, results) => {
+          if (err) {
+            return res.status(500).json({ error: "Internal server error" });
+          }
+          return res.status(201).json({ message: "User created successfully" });
+        }
+      );
+    });
   });
 });
 

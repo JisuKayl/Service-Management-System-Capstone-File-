@@ -3,12 +3,15 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button, TextField, Typography, Container, Box } from "@mui/material";
+import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { InputAdornment, IconButton } from "@mui/material";
 
 function LoginPage({ handleAuthentication }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -68,17 +71,33 @@ function LoginPage({ handleAuthentication }) {
           />
           <TextField
             label="Password"
-            type="password"
+            type={showPassword ? "text" : "password"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
             fullWidth
             sx={{ backgroundColor: "#fff", marginBottom: "20px" }}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton
+                    onClick={() => setShowPassword(!showPassword)}
+                    edge="end"
+                  >
+                    {showPassword ? <Visibility /> : <VisibilityOff />}
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
           />
           <Button type="submit" variant="contained" color="secondary">
             Login
           </Button>
-          {error && <Typography sx={{ color: "red" }}>{error}</Typography>}
+          {error && (
+            <Typography sx={{ color: "red" }}>
+              <pre>{error}</pre>
+            </Typography>
+          )}
         </form>
         <Typography variant="body1" sx={{ marginTop: "20px", color: "#fff" }}>
           Does not have an account?{" "}

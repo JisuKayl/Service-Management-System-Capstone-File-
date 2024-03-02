@@ -1,89 +1,60 @@
-/* eslint-disable no-unused-vars */
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import EquipReserveCss from "./EquipmentReservation.module.css";
 import { useNavigate } from "react-router-dom";
+import BEimage from "../../assets/placeholder.jpg";
+import PRimage from "../../assets/placeholder.jpg";
+import REimage from "../../assets/placeholder.jpg";
 
 const EquipmentReservationPage = () => {
-
-  const nav = useNavigate()
+  const nav = useNavigate();
 
   return (
     <>
-      <h1 className={EquipReserveCss.h1}>Equipment</h1>
+      <h1 className={EquipReserveCss.heading}>Equipment</h1>
 
       <div className={EquipReserveCss.container}>
-
-        
-        <div className={EquipReserveCss.box} onClick={()=>nav('borrow')}>
-
+        <div className={EquipReserveCss.box}>
           <div className={EquipReserveCss.img}>
-
-            <p>Image</p>
-
+            <img className={EquipReserveCss.main_imgs} src={BEimage} alt="" />
           </div>
 
-          <div className={EquipReserveCss.text}> 
-
-          <p>Borrow Equipment</p>
-
+          <div className={EquipReserveCss.text}>
+            <p>Borrow Equipment</p>
           </div>
 
-          <div className={EquipReserveCss.info}>
-
-            <p>More Info</p>
-
-          </div>
-
+          <button
+            className={EquipReserveCss.info}
+            onClick={() => nav("borrow")}
+          >
+            More Info
+          </button>
         </div>
 
-      
-
-        <div className={EquipReserveCss.box} onClick={()=>nav('request')}>
-
-           <div className={EquipReserveCss.img}>
-
-            <p>Image</p>
-
+        <div className={EquipReserveCss.box}>
+          <div className={EquipReserveCss.img} onClick={() => nav("request")}>
+            <img className={EquipReserveCss.main_imgs} src={PRimage} alt="" />
           </div>
 
-          <div className={EquipReserveCss.text}> 
-
-          <p>Pending Request</p>
-
+          <div className={EquipReserveCss.text}>
+            <p>Pending Request</p>
           </div>
 
-          <div className={EquipReserveCss.info2}>
-
-            <p>More Info</p>
-
-          </div> 
-
+          <button className={EquipReserveCss.info}>More Info</button>
         </div>
 
-        <div className={EquipReserveCss.box} onClick={()=>nav('view')}>
-
-          <div className={EquipReserveCss.img}>
-
-            <p>Image</p>
-
+        <div className={EquipReserveCss.box}>
+          <div className={EquipReserveCss.img} onClick={() => nav("view")}>
+            <img className={EquipReserveCss.main_imgs} src={REimage} alt="" />
           </div>
 
-          <div className={EquipReserveCss.text}> 
-
-          <p>Reserved Equipment</p>
-
+          <div className={EquipReserveCss.text}>
+            <p>Reserved Equipment</p>
           </div>
 
-          <div className={EquipReserveCss.info}>
-
-            <p>More Info</p>
-
-          </div>
-
+          <button className={EquipReserveCss.info}>More Info</button>
         </div>
-
       </div>
-      
     </>
   );
 };

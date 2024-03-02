@@ -1,50 +1,71 @@
-.h1 {
-  color: palevioletred;
+.heading {
+  color: green;
 }
 
-.container{
+.container {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
   text-align: center;
-  color: aliceblue;
+  color: white;
+  padding: 20px;
 }
-.img{
-  background-color: rgb(124, 125, 128);
+
+.box {
   margin: 20px;
-  text-align: center;
+  background-color: black;
+  width: 300px;
   height: 400px;
-  line-height: 400px;
-  font-size: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img {
+  background-color: rgb(124, 125, 128);
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+  font-size: 40px;
   color: red;
 }
 
-.box{
-  margin: 20px;
-  background-color: black;
-  width: 500px;
-  height: 700px;
-}
-
-.info{
-  background-color: green;
-  color: black;
-  width: 200px;
-  margin: auto;
+.text {
   font-size: 30px;
-}
-
-.info2{
-  background-color: green;
-  color: black;
-  width: 200px;
-  margin: auto;
-  margin-top: 3.6em;
-  font-size: 30px;
-}
-
-
-
-.text{
-  font-size: 60px;
   margin: 20px;
+}
+
+.info {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .img {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+}
+
+.main_imgs {
+  width: 10rem;
+  height: 6rem;
 }

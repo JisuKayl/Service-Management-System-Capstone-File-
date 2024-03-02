@@ -1,6 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { InputAdornment, IconButton } from "@mui/material";
+
 import {
   Button,
   TextField,
@@ -20,6 +23,7 @@ function SignUpPage() {
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -75,13 +79,26 @@ function SignUpPage() {
           />
           <TextField
             label="Password"
-            type="password"
+            type={showPassword ? "text" : "password"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
             fullWidth
             sx={{ backgroundColor: "#fff", marginBottom: "20px" }}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton
+                    onClick={() => setShowPassword(!showPassword)}
+                    edge="end"
+                  >
+                    {showPassword ? <Visibility /> : <VisibilityOff />}
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
           />
+
           <FormControl
             fullWidth
             required
@@ -101,7 +118,11 @@ function SignUpPage() {
           <Button type="submit" variant="contained" color="secondary">
             Sign Up
           </Button>
-          {error && <Typography sx={{ color: "red" }}>{error}</Typography>}
+          {error && (
+            <Typography sx={{ color: "red" }}>
+              <pre>{error}</pre>
+            </Typography>
+          )}
         </form>
         <Typography variant="body1" sx={{ marginTop: "20px", color: "#fff" }}>
           Already have an account?{" "}
