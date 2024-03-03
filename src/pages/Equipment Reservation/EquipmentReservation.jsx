@@ -14,7 +14,9 @@ const EquipmentReservationPage = () => {
       <h1 className={EquipReserveCss.heading}>Equipment</h1>
 
       <div className={EquipReserveCss.container}>
+
         <div className={EquipReserveCss.box}>
+          
           <div className={EquipReserveCss.img}>
             <img className={EquipReserveCss.main_imgs} src={BEimage} alt="" />
           </div>
@@ -29,10 +31,11 @@ const EquipmentReservationPage = () => {
           >
             More Info
           </button>
+
         </div>
 
         <div className={EquipReserveCss.box}>
-          <div className={EquipReserveCss.img} onClick={() => nav("request")}>
+          <div className={EquipReserveCss.img} >
             <img className={EquipReserveCss.main_imgs} src={PRimage} alt="" />
           </div>
 
@@ -40,11 +43,13 @@ const EquipmentReservationPage = () => {
             <p>Pending Request</p>
           </div>
 
-          <button className={EquipReserveCss.info}>More Info</button>
+          <button className={EquipReserveCss.info} onClick={() => nav("request")}
+          >More Info</button>
+
         </div>
 
         <div className={EquipReserveCss.box}>
-          <div className={EquipReserveCss.img} onClick={() => nav("view")}>
+          <div className={EquipReserveCss.img} >
             <img className={EquipReserveCss.main_imgs} src={REimage} alt="" />
           </div>
 
@@ -52,8 +57,11 @@ const EquipmentReservationPage = () => {
             <p>Reserved Equipment</p>
           </div>
 
-          <button className={EquipReserveCss.info}>More Info</button>
+          <button className={EquipReserveCss.info} onClick={() => nav("view")}
+          >More Info</button>
+
         </div>
+        
       </div>
     </>
   );
