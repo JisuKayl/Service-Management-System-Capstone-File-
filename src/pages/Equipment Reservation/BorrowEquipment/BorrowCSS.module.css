@@ -1,4 +1,4 @@
-
+/* done? */
 @media (min-width:320px)  { 
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
     .img{
@@ -6,24 +6,28 @@
       margin: 20px;
       text-align: center;
       height: 240px;
+      width: 200px;
       line-height: 240px;
       font-size: 2em;
-      color: red;
+      color: rgb(7, 7, 7);
   }
   
   .container{
-      display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3px;
+    width: auto;
+    text-align: center;
+    color: aliceblue;
   
   }
   
   .box{
       margin: 20px;
       background-color: black;
-      width: 400px;
-      height: 500px;
+      width: 300px;
+      height: 460px;
   }
   
   .text{
@@ -45,16 +49,20 @@
       margin: 20px;
       text-align: center;
       height: 240px;
+      width: 360px;
       line-height: 240px;
       font-size: 2em;
       color: red;
   }
   
   .container{
-      display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
   
   }
   
@@ -62,7 +70,7 @@
       margin: 20px;
       background-color: black;
       width: 400px;
-      height: 500px;
+      height: 460px;
   }
   
   .text{
@@ -76,6 +84,8 @@
       color: rgb(26, 47, 116);
   }   
 }
+
+/* done? */
   
 @media (min-width:600px)  { 
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
@@ -84,16 +94,20 @@
       margin: 20px;
       text-align: center;
       height: 240px;
+      width: 360px;
       line-height: 240px;
       font-size: 2em;
       color: red;
   }
   
   .container{
-      display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
   
   }
   
@@ -101,7 +115,7 @@
       margin: 20px;
       background-color: black;
       width: 400px;
-      height: 500px;
+      height: 460px;
   }
   
   .text{
@@ -115,7 +129,8 @@
       color: rgb(10, 134, 128);
   } 
 }
-  
+
+  /* done? */
 @media (min-width:801px)  { 
     /* tablet, landscape iPad, lo-res laptops ands desktops */ 
     .img{
@@ -123,16 +138,20 @@
       margin: 20px;
       text-align: center;
       height: 240px;
+      width: 360px;
       line-height: 240px;
       font-size: 2em;
       color: red;
   }
   
   .container{
-      display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
   
   }
   
@@ -140,7 +159,7 @@
       margin: 20px;
       background-color: black;
       width: 400px;
-      height: 500px;
+      height: 460px;
   }
   
   .text{
@@ -154,7 +173,8 @@
       color: rgb(216, 137, 19);
   }   
 }
-  
+
+  /* done? */
 @media (min-width:1025px) { 
     /* big landscape tablets, laptops, and desktops */
     .img{
@@ -162,17 +182,21 @@
       margin: 20px;
       text-align: center;
       height: 240px;
+      width: 360px;
       line-height: 240px;
       font-size: 2em;
       color: red;
   }
   
   .container{
-      display: flex;
-      width: 90vw;
-      justify-content: space-evenly;
-      text-align: center;
-      color: aliceblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
   
   }
   
@@ -180,7 +204,7 @@
       margin: 20px;
       background-color: black;
       width: 400px;
-      height: 500px;
+      height: 460px;
   }
   
   .text{
@@ -194,7 +218,8 @@
       color: rgb(253, 19, 19);
   } 
 }
-  
+
+  /* done? */
 @media (min-width:1281px) { 
     /* hi-res laptops and desktops */
 
@@ -230,7 +255,7 @@
       margin: 10px;
       background-color: rgb(7, 6, 6);
       width: 400px;
-      height: 480px;
+      height: 430px;
   }
   
   .text{
@@ -248,7 +273,7 @@
 
   .bigbox{
     
-    width: 200px;
+    /* width: 200px; */
     
   }
 
