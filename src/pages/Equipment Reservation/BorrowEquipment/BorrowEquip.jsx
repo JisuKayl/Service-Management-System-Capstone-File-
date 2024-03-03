@@ -3,6 +3,8 @@ import React from "react";
 import BorrowCSS from "../BorrowEquipment/BorrowCSS.module.css";
 import { useNavigate } from "react-router-dom";
 
+import BEimage from "../../../assets/placeholder.jpg";
+
 const BorrowEquip = () => {
 
   const nav = useNavigate()
@@ -10,12 +12,12 @@ const BorrowEquip = () => {
   return (
     <>
     
-    <div className={BorrowCSS.container} onClick={()=>nav('create')}>
+      <div className={BorrowCSS.container}>
         
         <div className={BorrowCSS.box}>
 
-            <div className={BorrowCSS.img}>
-                <p>Equipment Image</p>
+            <div className={BorrowCSS.imgbox}>
+             <img className={BorrowCSS.img} src={BEimage} alt="" />
             </div>
 
             <div className={BorrowCSS.text}>
@@ -25,16 +27,18 @@ const BorrowEquip = () => {
 
             </div>
 
-            <div className={BorrowCSS.booknow}>
+            <div className={BorrowCSS.booknow} onClick={()=>nav('create')}>
               <p>Book Now</p>
             </div>
 
         </div>
 
-         <div className={BorrowCSS.box}>
+      
 
-            <div className={BorrowCSS.img}>
-                <p>Equipment Image</p>
+        <div className={BorrowCSS.box}>
+
+            <div className={BorrowCSS.imgbox}>
+                <img className={BorrowCSS.img} src={BEimage} alt="" />
             </div>
 
             <div className={BorrowCSS.text}>
@@ -43,16 +47,16 @@ const BorrowEquip = () => {
 
             </div>
 
-            <div className={BorrowCSS.booknow}>
+            <div div className={BorrowCSS.booknow} onClick={()=>nav('create')}>
               <p>Book Now</p>
             </div>
 
         </div>
 
-         <div className={BorrowCSS.box}>
+        <div className={BorrowCSS.box}>
 
-            <div className={BorrowCSS.img}>
-                <p>Equipment Image</p>
+            <div className={BorrowCSS.imgbox}>
+                <img className={BorrowCSS.img} src={BEimage} alt="" />
             </div>
 
             <div className={BorrowCSS.text}>
@@ -61,16 +65,16 @@ const BorrowEquip = () => {
 
             </div>
 
-            <div className={BorrowCSS.booknow}>
+            <div div className={BorrowCSS.booknow} onClick={()=>nav('create')}>
               <p>Book Now</p>
             </div>
 
         </div>
 
-         <div className={BorrowCSS.box}>
+        <div className={BorrowCSS.box}>
 
-            <div className={BorrowCSS.img}>
-                <p>Equipment Image</p>
+            <div className={BorrowCSS.imgbox}>
+                <img className={BorrowCSS.img} src={BEimage} alt="" />
             </div>
 
             <div className={BorrowCSS.text}>
@@ -79,20 +83,23 @@ const BorrowEquip = () => {
 
             </div>
 
-            <div className={BorrowCSS.booknow}>
+            <div div className={BorrowCSS.booknow} onClick={()=>nav('create')}>
               <p>Book Now</p>
             </div>
 
         </div>
-        
-      </div>
 
-      <div className={BorrowCSS.container} onClick={()=>nav('create')}>
+      </div>  
+      
+
+      {/* 2nd */}
+
+      <div className={BorrowCSS.container}>
         
         <div className={BorrowCSS.box}>
 
-            <div className={BorrowCSS.img}>
-                <p>Equipment Image</p>
+            <div className={BorrowCSS.imgbox}>
+                <img className={BorrowCSS.img} src={BEimage} alt="" />
             </div>
 
             <div className={BorrowCSS.text}>
@@ -101,16 +108,16 @@ const BorrowEquip = () => {
 
             </div>
 
-            <div className={BorrowCSS.booknow}>
+            <div div className={BorrowCSS.booknow} onClick={()=>nav('create')}>
               <p>Book Now</p>
             </div>
 
         </div>
 
-         <div className={BorrowCSS.box}>
+        <div className={BorrowCSS.box}>
 
-            <div className={BorrowCSS.img}>
-                <p>Equipment Image</p>
+            <div className={BorrowCSS.imgbox}>
+                <img className={BorrowCSS.img} src={BEimage} alt="" />
             </div>
 
             <div className={BorrowCSS.text}>
@@ -119,16 +126,16 @@ const BorrowEquip = () => {
 
             </div>
 
-            <div className={BorrowCSS.booknow}>
+            <div div className={BorrowCSS.booknow} onClick={()=>nav('create')}>
               <p>Book Now</p>
             </div>
 
         </div>
 
-         <div className={BorrowCSS.box}>
+        <div className={BorrowCSS.box}>
 
-            <div className={BorrowCSS.img}>
-                <p>Equipment Image</p>
+            <div className={BorrowCSS.imgbox}>
+                <img className={BorrowCSS.img} src={BEimage} alt="" />
             </div>
 
             <div className={BorrowCSS.text}>
@@ -137,16 +144,16 @@ const BorrowEquip = () => {
 
             </div>
 
-            <div className={BorrowCSS.booknow}>
+            <div div className={BorrowCSS.booknow} onClick={()=>nav('create')}>
               <p>Book Now</p>
             </div>
 
         </div>
 
-         <div className={BorrowCSS.box}>
+        <div className={BorrowCSS.box}>
 
-            <div className={BorrowCSS.img}>
-                <p>Equipment Image</p>
+            <div className={BorrowCSS.imgbox}>
+                <img className={BorrowCSS.img} src={BEimage} alt="" />
             </div>
 
             <div className={BorrowCSS.text}>
@@ -155,7 +162,7 @@ const BorrowEquip = () => {
 
             </div>
 
-            <div className={BorrowCSS.booknow}>
+            <div div className={BorrowCSS.booknow} onClick={()=>nav('create')}>
 
               <p>Book Now</p>
 
@@ -164,10 +171,6 @@ const BorrowEquip = () => {
         </div>
         
       </div>
-
-
-
-
       
     </>
   );
