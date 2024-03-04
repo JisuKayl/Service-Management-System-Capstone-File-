@@ -14,6 +14,9 @@ const Create = () => {
 
           <div>
 
+            {/* testing */}
+          <input type="datetime-local" id="birthdaytime" name="birthdaytime"></input>
+
 
           <h1>Subject: </h1>
           <input type="text" className={CreateRCSS.input}></input>
