@@ -11,6 +11,7 @@ const AnnouncementPage = () => {
       <h1 className={AnnouncementCss.h1}>Announcement</h1>
 
       <div onClick={() => nav("details")}>
+        
         <div className={AnnouncementCss.box2}>
           <div>
             <p className={AnnouncementCss.circle}>Image</p>

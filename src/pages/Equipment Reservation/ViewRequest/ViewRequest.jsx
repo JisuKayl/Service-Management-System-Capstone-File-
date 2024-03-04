@@ -2,6 +2,8 @@
 import React from "react";
 import ViewCSS from "../ViewRequest/ViewRequest.module.css"
 
+import placeimg from "../../../assets/placeholder.jpg"
+
 
 const ViewRequest = () => {
   return (
@@ -12,11 +14,43 @@ const ViewRequest = () => {
 
         <div className={ViewCSS.background}>
 
+            <div className={ViewCSS.container}>
+
+                <div className={ViewCSS.userpic}>
+
+                  <img className={ViewCSS.userpic} src={placeimg} alt="" />
+                  
+                  <div className={ViewCSS.text}>
+                    <h3>Fullname</h3>
+                  </div>
+
+                </div>
+
+                <div className={ViewCSS.container2}>
+
+                  <p>Equipment:</p>
+                  <p>Subject:</p>
+                  <p>Date:</p>
+                  
+                  <p>Time:</p>
+
+                </div>
+
+                <div className={ViewCSS.butbox}>
+                  <button className={ViewCSS.but}>Remove</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div className={ViewCSS.background}>
+
           <div className={ViewCSS.container}>
 
               <div className={ViewCSS.userpic}>
 
-                  <p>User</p>
+                  <img className={ViewCSS.userpic} src={placeimg} alt="" />
                   <div className={ViewCSS.text}>
                   <h3>Fullname</h3>
                   </div>
@@ -47,7 +81,7 @@ const ViewRequest = () => {
 
               <div className={ViewCSS.userpic}>
 
-                  <p>User</p>
+                  <img className={ViewCSS.userpic} src={placeimg} alt="" />
                   <div className={ViewCSS.text}>
                   <h3>Fullname</h3>
                   </div>
@@ -78,7 +112,7 @@ const ViewRequest = () => {
 
               <div className={ViewCSS.userpic}>
 
-                  <p>User</p>
+                  <img className={ViewCSS.userpic} src={placeimg} alt="" />
                   <div className={ViewCSS.text}>
                   <h3>Fullname</h3>
                   </div>
@@ -109,7 +143,7 @@ const ViewRequest = () => {
 
               <div className={ViewCSS.userpic}>
 
-                  <p>User</p>
+                  <img className={ViewCSS.userpic} src={placeimg} alt="" />
                   <div className={ViewCSS.text}>
                   <h3>Fullname</h3>
                   </div>
@@ -140,7 +174,7 @@ const ViewRequest = () => {
 
               <div className={ViewCSS.userpic}>
 
-                  <p>User</p>
+                  <img className={ViewCSS.userpic} src={placeimg} alt="" />
                   <div className={ViewCSS.text}>
                   <h3>Fullname</h3>
                   </div>
@@ -171,7 +205,7 @@ const ViewRequest = () => {
 
               <div className={ViewCSS.userpic}>
 
-                  <p>User</p>
+                  <img className={ViewCSS.userpic} src={placeimg} alt="" />
                   <div className={ViewCSS.text}>
                   <h3>Fullname</h3>
                   </div>
@@ -202,38 +236,7 @@ const ViewRequest = () => {
 
               <div className={ViewCSS.userpic}>
 
-                  <p>User</p>
-                  <div className={ViewCSS.text}>
-                  <h3>Fullname</h3>
-                  </div>
-
-              </div>
-
-              <div className={ViewCSS.container2}>
-
-                  <p>Equipment:</p>
-                  <p>Subject:</p>
-                  <p>Date:</p>
-                  
-                  <p>Time:</p>
-
-              </div>
-
-              <div className={ViewCSS.butbox}>
-                  <button className={ViewCSS.but}>Remove</button>
-              </div>
-
-          </div>
-
-        </div>
-
-        <div className={ViewCSS.background}>
-
-          <div className={ViewCSS.container}>
-
-              <div className={ViewCSS.userpic}>
-
-                  <p>User</p>
+                  <img className={ViewCSS.userpic} src={placeimg} alt="" />
                   <div className={ViewCSS.text}>
                   <h3>Fullname</h3>
                   </div>

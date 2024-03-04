@@ -2,6 +2,8 @@
 import React from "react";
 import ViewEquipCSS from "../ViewEquipment/ViewEquipment.module.css"
 
+import placeimg from "../../../assets/placeholder.jpg"
+
 
 const ViewEquipment = () => {
   return (
@@ -17,7 +19,8 @@ const ViewEquipment = () => {
 
                 <div className={ViewEquipCSS.userpic}>
 
-                    <p>User</p>
+                 <img className={ViewEquipCSS.userpic} src={placeimg} alt="" />
+
                     <div className={ViewEquipCSS.text}>
                     <h3>Fullname</h3>
                     </div>
@@ -46,7 +49,7 @@ const ViewEquipment = () => {
 
                 <div className={ViewEquipCSS.userpic}>
 
-                    <p>User</p>
+                    <img className={ViewEquipCSS.userpic} src={placeimg} alt="" />
                     <div className={ViewEquipCSS.text}>
                     <h3>Fullname</h3>
                     </div>
@@ -75,7 +78,7 @@ const ViewEquipment = () => {
 
                 <div className={ViewEquipCSS.userpic}>
 
-                    <p>User</p>
+                    <img className={ViewEquipCSS.userpic} src={placeimg} alt="" />
                     <div className={ViewEquipCSS.text}>
                     <h3>Fullname</h3>
                     </div>
@@ -104,7 +107,7 @@ const ViewEquipment = () => {
 
                 <div className={ViewEquipCSS.userpic}>
 
-                    <p>User</p>
+                    <img className={ViewEquipCSS.userpic} src={placeimg} alt="" />
                     <div className={ViewEquipCSS.text}>
                     <h3>Fullname</h3>
                     </div>
@@ -133,7 +136,7 @@ const ViewEquipment = () => {
 
                 <div className={ViewEquipCSS.userpic}>
 
-                    <p>User</p>
+                    <img className={ViewEquipCSS.userpic} src={placeimg} alt="" />
                     <div className={ViewEquipCSS.text}>
                     <h3>Fullname</h3>
                     </div>
@@ -162,7 +165,7 @@ const ViewEquipment = () => {
 
                 <div className={ViewEquipCSS.userpic}>
 
-                    <p>User</p>
+                    <img className={ViewEquipCSS.userpic} src={placeimg} alt="" />
                     <div className={ViewEquipCSS.text}>
                     <h3>Fullname</h3>
                     </div>
@@ -191,7 +194,7 @@ const ViewEquipment = () => {
 
                 <div className={ViewEquipCSS.userpic}>
 
-                    <p>User</p>
+                    <img className={ViewEquipCSS.userpic} src={placeimg} alt="" />
                     <div className={ViewEquipCSS.text}>
                     <h3>Fullname</h3>
                     </div>
@@ -220,7 +223,7 @@ const ViewEquipment = () => {
 
                 <div className={ViewEquipCSS.userpic}>
 
-                    <p>User</p>
+                    <img className={ViewEquipCSS.userpic} src={placeimg} alt="" />
                     <div className={ViewEquipCSS.text}>
                     <h3>Fullname</h3>
                     </div>
