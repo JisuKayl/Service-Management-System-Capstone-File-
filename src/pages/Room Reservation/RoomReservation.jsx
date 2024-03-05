@@ -5,6 +5,8 @@ import RoomReserveCss from "./RoomReservation.module.css";
 
 import { useNavigate } from "react-router-dom";
 
+import imgplace from "../../assets/placeholder.jpg"
+
 
 const RoomReservationPage = () => {
 
@@ -19,11 +21,11 @@ const RoomReservationPage = () => {
       <div className={RoomReserveCss.container}>
 
         
-        <div className={RoomReserveCss.box} onClick={()=>nav('book')}>
+        <div className={RoomReserveCss.box} >
 
           <div className={RoomReserveCss.img}>
 
-            <p>Image</p>
+           <img className={RoomReserveCss.img} src={imgplace} alt="" />
 
           </div>
 
@@ -33,7 +35,7 @@ const RoomReservationPage = () => {
 
           </div>
 
-          <div className={RoomReserveCss.info}>
+          <div className={RoomReserveCss.info} onClick={()=>nav('book')}>
 
             <p>More Info</p>
 
@@ -43,11 +45,11 @@ const RoomReservationPage = () => {
 
       
 
-        <div className={RoomReserveCss.box} onClick={()=>nav('request')}>
+        <div className={RoomReserveCss.box} >
 
            <div className={RoomReserveCss.img}>
 
-            <p>Image</p>
+            <img className={RoomReserveCss.img} src={imgplace} alt="" />
 
           </div>
 
@@ -57,7 +59,7 @@ const RoomReservationPage = () => {
 
           </div>
 
-          <div className={RoomReserveCss.info}>
+          <div className={RoomReserveCss.info} onClick={()=>nav('request')}>
 
             <p>More Info</p>
 
@@ -65,11 +67,11 @@ const RoomReservationPage = () => {
 
         </div>
 
-        <div className={RoomReserveCss.box} onClick={()=>nav('view')}>
+        <div className={RoomReserveCss.box} >
 
           <div className={RoomReserveCss.img}>
 
-            <p>Image</p>
+            <img className={RoomReserveCss.img} src={imgplace} alt="" />
 
           </div>
 
@@ -79,7 +81,7 @@ const RoomReservationPage = () => {
 
           </div>
 
-          <div className={RoomReserveCss.info}>
+          <div className={RoomReserveCss.info} onClick={()=>nav('view')}>
 
             <p>More Info</p>
 

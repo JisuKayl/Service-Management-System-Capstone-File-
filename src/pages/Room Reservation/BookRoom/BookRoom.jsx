@@ -3,6 +3,8 @@ import React from "react";
 import bookcss from "../BookRoom/BookRoom.module.css";
 import { useNavigate } from "react-router-dom";
 
+import imgplace from "../../../assets/placeholder.jpg"
+
 const BookRoom = () => {
   const nav = useNavigate();
 
