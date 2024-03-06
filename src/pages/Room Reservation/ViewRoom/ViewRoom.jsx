@@ -2,6 +2,8 @@
 import React from "react";
 import ViewRoomCSS from "../ViewRoom/ViewRoom.module.css";
 
+import imgplace from "../../../assets/placeholder.jpg"
+
 const ViewRoom = () => {
   return (
     <>
@@ -10,17 +12,13 @@ const ViewRoom = () => {
     
       <h1>View All Reserved Rooms</h1>
 
-          <div className={ViewRoomCSS.background}>
+        <div className={ViewRoomCSS.background}>
 
             <div className={ViewRoomCSS.container}>
 
-                <div className={ViewRoomCSS.userpic}>
-
-                    <p>User</p>
-                    <div className={ViewRoomCSS.text}>
+                <div>
+                    <img className={ViewRoomCSS.userpic} src={imgplace} alt="" />
                     <h3>Fullname</h3>
-                    </div>
-
                 </div>
 
                 <div className={ViewRoomCSS.container2}>
@@ -44,13 +42,9 @@ const ViewRoom = () => {
 
             <div className={ViewRoomCSS.container}>
 
-                <div className={ViewRoomCSS.userpic}>
-
-                    <p>User</p>
-                    <div className={ViewRoomCSS.text}>
+                <div>
+                    <img className={ViewRoomCSS.userpic} src={imgplace} alt="" />
                     <h3>Fullname</h3>
-                    </div>
-
                 </div>
 
                 <div className={ViewRoomCSS.container2}>
@@ -73,13 +67,9 @@ const ViewRoom = () => {
 
             <div className={ViewRoomCSS.container}>
 
-                <div className={ViewRoomCSS.userpic}>
-
-                    <p>User</p>
-                    <div className={ViewRoomCSS.text}>
+               <div>
+                    <img className={ViewRoomCSS.userpic} src={imgplace} alt="" />
                     <h3>Fullname</h3>
-                    </div>
-
                 </div>
 
                 <div className={ViewRoomCSS.container2}>
@@ -102,13 +92,9 @@ const ViewRoom = () => {
 
             <div className={ViewRoomCSS.container}>
 
-                <div className={ViewRoomCSS.userpic}>
-
-                    <p>User</p>
-                    <div className={ViewRoomCSS.text}>
+                <div>
+                    <img className={ViewRoomCSS.userpic} src={imgplace} alt="" />
                     <h3>Fullname</h3>
-                    </div>
-
                 </div>
 
                 <div className={ViewRoomCSS.container2}>
@@ -131,13 +117,9 @@ const ViewRoom = () => {
 
             <div className={ViewRoomCSS.container}>
 
-                <div className={ViewRoomCSS.userpic}>
-
-                    <p>User</p>
-                    <div className={ViewRoomCSS.text}>
+                <div>
+                    <img className={ViewRoomCSS.userpic} src={imgplace} alt="" />
                     <h3>Fullname</h3>
-                    </div>
-
                 </div>
 
                 <div className={ViewRoomCSS.container2}>
@@ -160,13 +142,9 @@ const ViewRoom = () => {
 
             <div className={ViewRoomCSS.container}>
 
-                <div className={ViewRoomCSS.userpic}>
-
-                    <p>User</p>
-                    <div className={ViewRoomCSS.text}>
+                <div>
+                    <img className={ViewRoomCSS.userpic} src={imgplace} alt="" />
                     <h3>Fullname</h3>
-                    </div>
-
                 </div>
 
                 <div className={ViewRoomCSS.container2}>
@@ -189,13 +167,9 @@ const ViewRoom = () => {
 
             <div className={ViewRoomCSS.container}>
 
-                <div className={ViewRoomCSS.userpic}>
-
-                    <p>User</p>
-                    <div className={ViewRoomCSS.text}>
+                <div>
+                    <img className={ViewRoomCSS.userpic} src={imgplace} alt="" />
                     <h3>Fullname</h3>
-                    </div>
-
                 </div>
 
                 <div className={ViewRoomCSS.container2}>
@@ -218,13 +192,9 @@ const ViewRoom = () => {
 
             <div className={ViewRoomCSS.container}>
 
-                <div className={ViewRoomCSS.userpic}>
-
-                    <p>User</p>
-                    <div className={ViewRoomCSS.text}>
+                <div>
+                    <img className={ViewRoomCSS.userpic} src={imgplace} alt="" />
                     <h3>Fullname</h3>
-                    </div>
-
                 </div>
 
                 <div className={ViewRoomCSS.container2}>

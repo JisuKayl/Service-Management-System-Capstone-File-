@@ -1,94 +1,235 @@
-.img {
-  background-color: rgb(124, 125, 128);
-  margin: 20px;
-  text-align: center;
-  height: 240px;
-  line-height: 240px;
-  font-size: 50px;
-  color: red;
-}
 
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  color: aliceblue;
-}
-
-.box {
-  margin: 20px;
-  background-color: black;
-  width: 400px;
-  height: 500px;
-}
-
-.text {
-  font-size: 20px;
-}
-
-.booknow {
-  background-color: green;
-  margin: 20px;
-  font-size: 40px;
-  color: black;
-}
-
+/* messy done???? */
 @media (min-width:320px)  { 
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
-  .title {
-    width: 400px;
-    height: 200px;
-    background-color: rgb(37, 129, 83);
+  .img {
+    background-color: rgb(124, 125, 128);
+    margin: 20px;
+    text-align: center;
+    height: 240px;
+    line-height: 240px;
+    font-size: 50px;
+    color: red;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .box {
+    margin: 20px;
+    background-color: black;
+    width: 260px;
+    height: 500px;
+  }
+  
+  .text {
+    font-size: 20px;
+  }
+  
+  .booknow {
+    background-color: green;
+    margin: 20px;
+    font-size: 40px;
     color: black;
-  }   
+  }  
 }
-
+/* done? */
 @media (min-width:480px)  { 
   /* smartphones, Android phones, landscape iPhone */ 
-  .title {
+  .img {
+    background-color: rgb(124, 125, 128);
+    margin: 20px;
+    text-align: center;
+    height: 240px;
+    line-height: 240px;
+    font-size: 50px;
+    color: red;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .box {
+    margin: 20px;
+    background-color: black;
     width: 400px;
-    height: 200px;
-    background-color: rgb(255, 81, 0);
+    height: 500px;
+  }
+  
+  .text {
+    font-size: 20px;
+  }
+  
+  .booknow {
+    background-color: green;
+    margin: 20px;
+    font-size: 40px;
     color: black;
-  }   
+  }  
 }
-
+/* done? */
 @media (min-width:600px)  { 
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-  .title {
+  .img {
+    background-color: rgb(124, 125, 128);
+    margin: 20px;
+    text-align: center;
+    height: 240px;
+    line-height: 240px;
+    font-size: 50px;
+    color: red;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .box {
+    margin: 20px;
+    background-color: black;
     width: 400px;
-    height: 200px;
-    background-color: rgb(193, 211, 211);
+    height: 500px;
+  }
+  
+  .text {
+    font-size: 20px;
+  }
+  
+  .booknow {
+    background-color: green;
+    margin: 20px;
+    font-size: 40px;
     color: black;
-  }   
+  }  
 }
-
+/* done? */
 @media (min-width:801px)  { 
   /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-  .title {
+  .img {
+    background-color: rgb(124, 125, 128);
+    margin: 20px;
+    text-align: center;
+    height: 240px;
+    line-height: 240px;
+    font-size: 50px;
+    color: red;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .box {
+    margin: 20px;
+    background-color: black;
     width: 400px;
-    height: 200px;
-    background-color: rgb(25, 0, 255);
+    height: 500px;
+  }
+  
+  .text {
+    font-size: 20px;
+  }
+  
+  .booknow {
+    background-color: green;
+    margin: 20px;
+    font-size: 40px;
     color: black;
   }   
 }
-
+/* done? */
 @media (min-width:1025px) { 
   /* big landscape tablets, laptops, and desktops */
-  .title {
+  .img {
+    background-color: rgb(124, 125, 128);
+    margin: 20px;
+    text-align: center;
+    height: 240px;
+    line-height: 240px;
+    font-size: 50px;
+    color: red;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .box {
+    margin: 20px;
+    background-color: black;
     width: 400px;
-    height: 200px;
-    background-color: rgb(255, 0, 128);
+    height: 500px;
+  }
+  
+  .text {
+    font-size: 20px;
+  }
+  
+  .booknow {
+    background-color: green;
+    margin: 20px;
+    font-size: 40px;
     color: black;
   }   
 }
-
+/* done? */
 @media (min-width:1281px) { 
   /* hi-res laptops and desktops */
-  .title {
+  .img {
+    background-color: rgb(124, 125, 128);
+    margin: 20px;
+    text-align: center;
+    height: 240px;
+    line-height: 240px;
+    font-size: 50px;
+    color: red;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .box {
+    margin: 20px;
+    background-color: black;
     width: 400px;
-    height: 200px;
-    background-color: rgb(49, 24, 24);
+    height: 500px;
+  }
+  
+  .text {
+    font-size: 20px;
+  }
+  
+  .booknow {
+    background-color: green;
+    margin: 20px;
+    font-size: 40px;
     color: black;
-  }   
+  }  
 }

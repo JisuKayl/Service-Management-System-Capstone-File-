@@ -14,8 +14,10 @@ const BookRoom = () => {
 
       <div className={bookcss.container}>
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+
+            <img className={bookcss.img} src={imgplace} alt="" />
+            
           </div>
 
           <div className={bookcss.text}>
@@ -30,8 +32,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div >
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -46,8 +48,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div >
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -62,8 +64,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -82,8 +84,8 @@ const BookRoom = () => {
 
       <div className={bookcss.container}>
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -98,8 +100,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -114,8 +116,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -130,8 +132,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -150,8 +152,8 @@ const BookRoom = () => {
 
       <div className={bookcss.container}>
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -166,8 +168,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -182,8 +184,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -198,8 +200,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -218,8 +220,8 @@ const BookRoom = () => {
 
       <div className={bookcss.container}>
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -234,8 +236,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -250,8 +252,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>
@@ -266,8 +268,8 @@ const BookRoom = () => {
         </div>
 
         <div className={bookcss.box}>
-          <div className={bookcss.img}>
-            <p>Room Image</p>
+          <div>
+            <img className={bookcss.img} src={imgplace} alt="" />
           </div>
 
           <div className={bookcss.text}>

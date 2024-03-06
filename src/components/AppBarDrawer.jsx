@@ -52,6 +52,8 @@ import CreateEquip from "../pages/Equipment Reservation/CreatingRequest/Create.j
 import ViewEquip from "../pages/Equipment Reservation/ViewEquipment/ViewEquipment.jsx"
 import ViewRequestEquip from "../pages/Equipment Reservation/ViewRequest/ViewRequest.jsx"
 
+import Profile from "../pages/ProfileProf/profile.jsx"
+
 
 const drawerWidth = 240;
 
@@ -144,6 +146,8 @@ export default function MiniDrawer() {
     setAnchorEl(null);
   };
 
+  const nav = useNavigate();
+
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
@@ -199,7 +203,7 @@ export default function MiniDrawer() {
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
           >
-            <MenuItem onClick={handleMenuClose}>My Account</MenuItem>
+            <MenuItem onClick={()=> nav ("profile")}>My Account</MenuItem>
             <MenuItem onClick={handleMenuClose}>Change Password</MenuItem>
             <Divider />
             <MenuItem onClick={() => {
@@ -305,6 +309,8 @@ export default function MiniDrawer() {
           <Route path="/equipment-reservation/borrow/create" element={<CreateEquip />} />
           <Route path="/equipment-reservation/view" element={<ViewEquip />} />
           <Route path="/equipment-reservation/request" element={<ViewRequestEquip />} />
+
+          <Route path="/profile" element={<Profile />} />
           
         
 

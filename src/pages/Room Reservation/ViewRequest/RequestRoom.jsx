@@ -2,6 +2,8 @@
 import React from "react";
 import RequestRoomCss from "../ViewRequest/RequestRoom.module.css";
 
+import placeimg from "../../../assets/placeholder.jpg"
+
 const RequestRoom = () => {
   return (
     <>
@@ -10,11 +12,9 @@ const RequestRoom = () => {
 
         <div className={RequestRoomCss.background}>
           <div className={RequestRoomCss.container}>
-            <div className={RequestRoomCss.userpic}>
-              <p>User</p>
-              <div className={RequestRoomCss.text}>
-                <h3>Fullname</h3>
-              </div>
+            <div>
+              <img className={RequestRoomCss.userpic} src={placeimg} alt="" />
+              <h3>Fullname</h3>
             </div>
 
             <div className={RequestRoomCss.container2}>
@@ -33,11 +33,9 @@ const RequestRoom = () => {
 
         <div className={RequestRoomCss.background}>
           <div className={RequestRoomCss.container}>
-            <div className={RequestRoomCss.userpic}>
-              <p>User</p>
-              <div className={RequestRoomCss.text}>
-                <h3>Fullname</h3>
-              </div>
+            <div>
+              <img className={RequestRoomCss.userpic} src={placeimg} alt="" />
+              <h3>Fullname</h3>
             </div>
 
             <div className={RequestRoomCss.container2}>
@@ -56,11 +54,9 @@ const RequestRoom = () => {
 
         <div className={RequestRoomCss.background}>
           <div className={RequestRoomCss.container}>
-            <div className={RequestRoomCss.userpic}>
-              <p>User</p>
-              <div className={RequestRoomCss.text}>
-                <h3>Fullname</h3>
-              </div>
+            <div>
+              <img className={RequestRoomCss.userpic} src={placeimg} alt="" />
+              <h3>Fullname</h3>
             </div>
 
             <div className={RequestRoomCss.container2}>
@@ -79,11 +75,9 @@ const RequestRoom = () => {
 
         <div className={RequestRoomCss.background}>
           <div className={RequestRoomCss.container}>
-            <div className={RequestRoomCss.userpic}>
-              <p>User</p>
-              <div className={RequestRoomCss.text}>
-                <h3>Fullname</h3>
-              </div>
+            <div>
+              <img className={RequestRoomCss.userpic} src={placeimg} alt="" />
+              <h3>Fullname</h3>
             </div>
 
             <div className={RequestRoomCss.container2}>
@@ -102,11 +96,9 @@ const RequestRoom = () => {
 
         <div className={RequestRoomCss.background}>
           <div className={RequestRoomCss.container}>
-            <div className={RequestRoomCss.userpic}>
-              <p>User</p>
-              <div className={RequestRoomCss.text}>
-                <h3>Fullname</h3>
-              </div>
+            <div>
+              <img className={RequestRoomCss.userpic} src={placeimg} alt="" />
+              <h3>Fullname</h3>
             </div>
 
             <div className={RequestRoomCss.container2}>
@@ -125,11 +117,9 @@ const RequestRoom = () => {
 
         <div className={RequestRoomCss.background}>
           <div className={RequestRoomCss.container}>
-            <div className={RequestRoomCss.userpic}>
-              <p>User</p>
-              <div className={RequestRoomCss.text}>
-                <h3>Fullname</h3>
-              </div>
+            <div>
+              <img className={RequestRoomCss.userpic} src={placeimg} alt="" />
+              <h3>Fullname</h3>
             </div>
 
             <div className={RequestRoomCss.container2}>
@@ -148,11 +138,9 @@ const RequestRoom = () => {
 
         <div className={RequestRoomCss.background}>
           <div className={RequestRoomCss.container}>
-            <div className={RequestRoomCss.userpic}>
-              <p>User</p>
-              <div className={RequestRoomCss.text}>
-                <h3>Fullname</h3>
-              </div>
+            <div>
+              <img className={RequestRoomCss.userpic} src={placeimg} alt="" />
+              <h3>Fullname</h3>
             </div>
 
             <div className={RequestRoomCss.container2}>
@@ -171,11 +159,9 @@ const RequestRoom = () => {
 
         <div className={RequestRoomCss.background}>
           <div className={RequestRoomCss.container}>
-            <div className={RequestRoomCss.userpic}>
-              <p>User</p>
-              <div className={RequestRoomCss.text}>
-                <h3>Fullname</h3>
-              </div>
+            <div>
+              <img className={RequestRoomCss.userpic} src={placeimg} alt="" />
+              <h3>Fullname</h3>
             </div>
 
             <div className={RequestRoomCss.container2}>

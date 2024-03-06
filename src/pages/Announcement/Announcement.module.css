@@ -272,7 +272,7 @@
   }
   
   .img {
-    display: f;
+    display: flex;
     background-color: aqua;
     color: white;
   }
@@ -292,6 +292,7 @@
   .box2 {
     width: 100%;
     display: flex;
+    
     justify-content: space-between;
     border-block: 2px solid rgb(197, 197, 197);
     cursor: pointer;
@@ -303,6 +304,7 @@
   
   .posted {
     margin: 12px;
+    
   }
   
   .description {
