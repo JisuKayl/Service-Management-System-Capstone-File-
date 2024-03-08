@@ -2,7 +2,7 @@
 import React from "react";
 
 
-const FormsPage = () => {
+const Announcementadmin = () => {
   return (
     <>
       <h1>Forms</h1>
@@ -11,4 +11,4 @@ const FormsPage = () => {
   );
 };
 
-export default FormsPage;
+export default Announcementadmin;

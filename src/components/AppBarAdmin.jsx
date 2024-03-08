@@ -32,25 +32,29 @@ import Logo from "../assets/Baliuag_University_logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { Routes, Route } from "react-router-dom";
-// import DashboardPage from "../pages/Dashboard/Dashboard.jsx";
-// import AnnouncementPage from "../pages/Announcement/Announcement.jsx";
-import RoomReservationPage from "../pages/Admin Page/Room Reservation/RoomReserveadmin";
-// import EquipmentReservationPage from "../pages/Equipment Reservation/EquipmentReservation.jsx";
-// import LostAndFoundPage from "../pages/Lost and Found/LostAndFound.jsx";
-// import FormsPage from "../pages/Forms/Forms.jsx";
-// import InboxPage from "../pages/Inbox/Inbox.jsx";
+import DashboardPage from "../pages/Admin Page/Dashboard/Dashboardadmin.jsx";
+import AnnouncementPage from "../pages/Admin Page/Annoucement/Annoucemetnadmin.jsx";
+import RoomReservationPage from "../pages/Admin Page/Room Reservation/RoomReserveadmin.jsx"
+import EquipmentReservationPage from "../pages/Admin Page/Equipment Reservation/EquipmentReservationadmin.jsx";
 
-// import Announcementdetails from "../pages/Announcement/Announcement2.jsx";
+import FormsPage from "../pages/Forms/Forms.jsx";
+import InboxPage from "../pages/Admin Page/Inbox/Inboxadmin.jsx";
 
-// import BookRoom from "../pages/Room Reservation/BookRoom/BookRoom.jsx";
-// import CreateRoom from "../pages/Room Reservation/CreatingRoom/CreatingRoom.jsx"
-// import ViewRequest from "../pages/Room Reservation/ViewRequest/RequestRoom.jsx"
-// import ViewRoom from "../pages/Room Reservation/ViewRoom/ViewRoom.jsx"
+import Announcementdetails from "../pages/Announcement/Announcement2.jsx";
+// import CreateAnouncement from "";
 
-// import BorrowEquip from "../pages/Equipment Reservation/BorrowEquipment/BorrowEquip.jsx"
-// import CreateEquip from "../pages/Equipment Reservation/CreatingRequest/Create.jsx"
-// import ViewEquip from "../pages/Equipment Reservation/ViewEquipment/ViewEquipment.jsx"
-// import ViewRequestEquip from "../pages/Equipment Reservation/ViewRequest/ViewRequest.jsx"
+
+import Profile from "../pages/Admin Page/AdminProfile/Profileadmin.jsx"
+
+import BookRoom from "../pages/Room Reservation/BookRoom/BookRoom.jsx";
+import CreateRoom from "../pages/Room Reservation/CreatingRoom/CreatingRoom.jsx"
+import ViewRequest from "../pages/Room Reservation/ViewRequest/RequestRoom.jsx"
+import ViewRoom from "../pages/Room Reservation/ViewRoom/ViewRoom.jsx"
+
+import BorrowEquip from "../pages/Equipment Reservation/BorrowEquipment/BorrowEquip.jsx"
+import CreateEquip from "../pages/Equipment Reservation/CreatingRequest/Create.jsx"
+import ViewEquip from "../pages/Equipment Reservation/ViewEquipment/ViewEquipment.jsx"
+import ViewRequestEquip from "../pages/Equipment Reservation/ViewRequest/ViewRequest.jsx"
 
 const drawerWidth = 240;
 
@@ -142,6 +146,8 @@ export default function AdminAppBar() {
     setAnchorEl(null);
   };
 
+  const nav = useNavigate();
+
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
@@ -197,7 +203,7 @@ export default function AdminAppBar() {
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
           >
-            <MenuItem onClick={handleMenuClose}>My Account</MenuItem>
+            <MenuItem onClick={()=> nav ("profile")}>My Account</MenuItem>
             <MenuItem onClick={handleMenuClose}>Change Password</MenuItem>
             <Divider />
             <MenuItem
@@ -298,18 +304,20 @@ export default function AdminAppBar() {
 
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "3rem" }}>
         <Routes>
-          {/* <Route path="/" element={<DashboardPage />} />
-          <Route path="/announcement" element={<AnnouncementPage />} /> */}
+          <Route path="/" element={<DashboardPage />} />
+          <Route path="/announcement" element={<AnnouncementPage />} />
           <Route path="/room-reservation" element={<RoomReservationPage />} />
-          {/* <Route
+          <Route
             path="/equipment-reservation"
             element={<EquipmentReservationPage />}
           />
-          <Route path="/lost-and-found" element={<LostAndFoundPage />} />
+
+          <Route path="/profile" element={<Profile />} />
+          
           <Route path="/forms" element={<FormsPage />} />
           <Route path="/inbox" element={<InboxPage />} />
 
-          <Route path="/announcement/details" element={<Announcementdetails />} /> */}
+          <Route path="/announcement/details" element={<Announcementdetails />} />
         </Routes>
       </Box>
     </Box>

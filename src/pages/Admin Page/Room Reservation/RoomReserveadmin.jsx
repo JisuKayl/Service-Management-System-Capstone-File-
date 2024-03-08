@@ -1,11 +1,18 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import RoomReserveCss from "./RoomReserveCSS.module.css"
+import { useNavigate } from "react-router-dom";
+import RoomReserveCss from "../Room Reservation/RoomReserveCSS.module.css"
+
+import imgplace from "../../../assets/placeholder.jpg"
 
 
-const RoomReserveadmin = () =>{
-    return(
-        <>
-         <h1 className={RoomReserveCss.h1}>Room Reservation</h1>
+const RoomReserveadmin = () => {
+
+    const nav = useNavigate()
+
+  return (
+    <>
+    <h1 className={RoomReserveCss.h1}>Room Reservation</h1>
 
       <div className={RoomReserveCss.container}>
 
@@ -79,12 +86,15 @@ const RoomReserveadmin = () =>{
         </div>
 
       </div>
-        
+
+      
 
 
 
-        </>
-    );
+
+      
+    </>
+  );
 };
 
-export default RoomReserveadmin
+export default RoomReserveadmin;
