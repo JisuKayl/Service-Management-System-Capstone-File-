@@ -35,7 +35,7 @@ import DashboardPage from "../pages/Dashboard/Dashboard.jsx";
 import AnnouncementPage from "../pages/Announcement/Announcement.jsx";
 import RoomReservationPage from "../pages/Room Reservation/RoomReservation.jsx";
 import EquipmentReservationPage from "../pages/Equipment Reservation/EquipmentReservation.jsx";
-import LostAndFoundPage from "../pages/Lost and Found/LostAndFound.jsx";
+
 import FormsPage from "../pages/Forms/Forms.jsx";
 import InboxPage from "../pages/Inbox/Inbox.jsx";
 
@@ -294,7 +294,7 @@ export default function MiniDrawer() {
             path="/equipment-reservation"
             element={<EquipmentReservationPage />}
           />
-          <Route path="/lost-and-found" element={<LostAndFoundPage />} />
+          
           <Route path="/forms" element={<FormsPage />} />
           <Route path="/inbox" element={<InboxPage />} />
 
