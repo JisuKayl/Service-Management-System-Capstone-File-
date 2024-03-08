@@ -34,7 +34,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 // import DashboardPage from "../pages/Dashboard/Dashboard.jsx";
 // import AnnouncementPage from "../pages/Announcement/Announcement.jsx";
-// import RoomReservationPage from "../pages/Room Reservation/RoomReservation.jsx";
+import RoomReservationPage from "../pages/Admin Page/Room Reservation/RoomReserveadmin";
 // import EquipmentReservationPage from "../pages/Equipment Reservation/EquipmentReservation.jsx";
 // import LostAndFoundPage from "../pages/Lost and Found/LostAndFound.jsx";
 // import FormsPage from "../pages/Forms/Forms.jsx";
@@ -299,9 +299,9 @@ export default function AdminAppBar() {
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "3rem" }}>
         <Routes>
           {/* <Route path="/" element={<DashboardPage />} />
-          <Route path="/announcement" element={<AnnouncementPage />} />
+          <Route path="/announcement" element={<AnnouncementPage />} /> */}
           <Route path="/room-reservation" element={<RoomReservationPage />} />
-          <Route
+          {/* <Route
             path="/equipment-reservation"
             element={<EquipmentReservationPage />}
           />
