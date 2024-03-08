@@ -46,15 +46,15 @@ import Announcementdetails from "../pages/Announcement/Announcement2.jsx";
 
 import Profile from "../pages/Admin Page/AdminProfile/Profileadmin.jsx"
 
-import BookRoom from "../pages/Room Reservation/BookRoom/BookRoom.jsx";
+import BookRoom from "../pages/Admin Page/Room Reservation/BookRoom/BookRoomadmin.jsx";
 import CreateRoom from "../pages/Room Reservation/CreatingRoom/CreatingRoom.jsx"
-import ViewRequest from "../pages/Room Reservation/ViewRequest/RequestRoom.jsx"
-import ViewRoom from "../pages/Room Reservation/ViewRoom/ViewRoom.jsx"
+import ViewRequest from "../pages/Admin Page/Room Reservation/ViewRequest/ViewRequestadmin.jsx"
+import ViewRoom from "../pages/Admin Page/Room Reservation/ViewRoom/ViewRoomadmin.jsx"
 
-import BorrowEquip from "../pages/Equipment Reservation/BorrowEquipment/BorrowEquip.jsx"
+import BorrowEquip from "../pages/Admin Page/Equipment Reservation/BorrowEquipmentadmin/borroweuip.jsx"
 import CreateEquip from "../pages/Equipment Reservation/CreatingRequest/Create.jsx"
-import ViewEquip from "../pages/Equipment Reservation/ViewEquipment/ViewEquipment.jsx"
-import ViewRequestEquip from "../pages/Equipment Reservation/ViewRequest/ViewRequest.jsx"
+import ViewEquip from "../pages/Admin Page/Equipment Reservation/ViewEquipadmin/ViewEquip.jsx"
+import ViewRequestEquip from "../pages/Admin Page/Equipment Reservation/ViewRequestadmin/ViewRequest.jsx"
 
 const drawerWidth = 240;
 
@@ -318,6 +318,15 @@ export default function AdminAppBar() {
           <Route path="/inbox" element={<InboxPage />} />
 
           <Route path="/announcement/details" element={<Announcementdetails />} />
+
+          <Route path="/room-reservation/book" element={<BookRoom />} />
+          <Route path="/room-reservation/request" element={<ViewRequest />} />
+          <Route path="/room-reservation/view" element={<ViewRoom />} />
+
+          <Route path="/equipment-reservation/borrow" element={<BorrowEquip />} />
+          <Route path="/equipment-reservation/view" element={<ViewEquip />} />
+          <Route path="/equipment-reservation/request" element={<ViewRequestEquip />} />
+
         </Routes>
       </Box>
     </Box>

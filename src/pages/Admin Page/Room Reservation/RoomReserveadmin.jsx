@@ -27,7 +27,7 @@ const RoomReserveadmin = () => {
 
           <div className={RoomReserveCss.text}> 
 
-          <p>Book Room</p>
+          <p>View Room</p>
 
           </div>
 
@@ -51,7 +51,7 @@ const RoomReserveadmin = () => {
 
           <div className={RoomReserveCss.text}> 
 
-          <p>Pending Request</p>
+          <p>View Request</p>
 
           </div>
 
