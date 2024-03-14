@@ -1,0 +1,40 @@
+.head{
+    margin: 1em;
+}
+
+.title{
+    margin: 1em;
+    padding: 1em;
+    width: 100em;
+
+}
+
+.msg{
+    margin: 1em;
+    padding: 1em;
+    width: 100em;
+    height: 40em;
+    resize: none;
+}
+
+.box{
+    margin: auto;
+    display: grid;
+    justify-items: center;
+}
+
+.box2{
+ float: right;
+}
+
+.cancelbut{
+    width: 10em;
+    height: 4em;
+    margin: 1em;
+}
+
+.sendbut{
+    width: 10em;
+    height: 4em;
+    margin: 1em;
+}

@@ -41,7 +41,7 @@ import FormsPage from "../pages/Forms/Forms.jsx";
 import InboxPage from "../pages/Admin Page/Inbox/Inboxadmin.jsx";
 
 import Announcementdetails from "../pages/Announcement/Announcement2.jsx";
-// import CreateAnouncement from "";
+import CreateAnouncement from "../pages/Admin Page/Annoucement/CreateANN/CreateANN.jsx";
 
 
 import Profile from "../pages/Admin Page/AdminProfile/Profileadmin.jsx"
@@ -318,6 +318,8 @@ export default function AdminAppBar() {
           <Route path="/inbox" element={<InboxPage />} />
 
           <Route path="/announcement/details" element={<Announcementdetails />} />
+          <Route path="/announcement/create" element={<CreateAnouncement />} />
+          
 
           <Route path="/room-reservation/book" element={<BookRoom />} />
           <Route path="/room-reservation/request" element={<ViewRequest />} />
