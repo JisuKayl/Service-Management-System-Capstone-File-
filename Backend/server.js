@@ -31,6 +31,9 @@ app.get("/", (req, res) => {
 app.use(bodyParser.json());
 app.use(cors());
 
+const urlencodedParser = bodyParser.urlencoded({extended:false});
+
+
 // Signup Endpoint
 app.post("/signup", (req, res) => {
   const { fullName, email, password, role } = req.body;
@@ -129,3 +132,10 @@ app.post("/login", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+
+app.post('/CreateANN',(req, res) =>{
+  console.log(req.body);
+
+})
+
