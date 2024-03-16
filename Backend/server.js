@@ -133,9 +133,10 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-
-app.post('/CreateANN',(req, res) =>{
-  console.log(req.body);
+// Announcement part 
+app.post('/create',(req, res) =>{
+  res.json({"Message":"Submitted"})
+  console.log(req.body)
 
 })
 

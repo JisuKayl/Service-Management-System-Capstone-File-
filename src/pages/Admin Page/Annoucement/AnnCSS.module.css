@@ -1,4 +1,4 @@
-.h1 {
+  .h1 {
     color: green;
     text-align: center;
   }
@@ -61,4 +61,8 @@
     height: 2em;
     margin: 1em;
     
+  }
+
+  .dellbutt{
+    width: 10em;
   }
