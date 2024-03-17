@@ -1,27 +1,30 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import AnnouncementCss from "./AnnCSS.module.css";
 
 
 const Announcementadmin = () => {
   const nav = useNavigate();
+  
 
   const [blogs,setBlogs]=useState(null)
 
-  // this part not working
-  // https://www.youtube.com/watch?v=Wb-0CkLiyQk&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=31
-
-  const handleDelete = () =>{
+  const handleDelete = (id) =>{
     // const newBlogs = blogs.filter(blog => blog.id !=id)
     // setBlogs(newBlogs)
+    alert("Deleted")
 
-    fetch("http://localhost:4000/blogs"+ blog.id,{
+    fetch("http://localhost:4000/blogs/"+ id,{
       method: 'DELETE'
     })
+
   }
 
+  
+
   useEffect(()=>{
+
     fetch("http://localhost:4000/blogs")
     .then(res =>{
       return res.json()
@@ -36,7 +39,6 @@ const Announcementadmin = () => {
       console.log(err.message);
     })
     
-
   },[]);
   
   return (

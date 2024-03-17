@@ -1,33 +1,6 @@
 {
   "blogs": [
     {
-      "id": "28b0",
-      "tile": "fck test ",
-      "msg": "u"
-    },
-    {
-      "id": "429e",
-      "tile": "dasd",
-      "msg": "asdasdas"
-    },
-    {
-      "id": "fc33",
-      "tile": "test1",
-      "msg": "ggg"
-    },
-    {
-      "id": "7b22",
-      "tile": "123",
-      "msg": "ee",
-      "admin": "Admin"
-    },
-    {
-      "id": "f76b",
-      "tile": "nav",
-      "msg": "test",
-      "admin": "Admin"
-    },
-    {
       "id": "f40d",
       "tile": "man",
       "msg": "test",

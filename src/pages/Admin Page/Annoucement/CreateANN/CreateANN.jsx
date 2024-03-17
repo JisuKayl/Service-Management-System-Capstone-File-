@@ -8,6 +8,8 @@ const CreateANN = () => {
 
   const [tile,settitle] = useState("")
   const [msg,setmsg] = useState("")
+
+  // change this for more dynamic value
   const [admin,setadmin] = useState("Admin")
 
   const nav = useNavigate();
